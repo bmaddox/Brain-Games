@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Brain Games | Color Balls</title>
+		<link rel="stylesheet" href="css/brain.css?v4">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.path.js"></script>
+		<script src="js/easing-min.js"></script>
+		<script src="js/jquery.preload.min.js"></script>
+		<script src="js/jquery.pause.min.js"></script>
+		<script src="js/color-balls.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<a href="index.html"><img src="images/bg_header.png" id="header" /></a>
+			<a href="http://braingames.nationalgeographic.com/" target="_blank"><img src="images/bg_logo_ngc.png" id="logo-ngc" /></a>
+
+			<div id="game-lobe"><img src="images/bg_header_colorballs.png" /></div>
+
+			<div id="game-stats">
+				<div id="cb-level">LEVEL: <span id="cb-level-number">1</span></div>
+				<div id="cb-time"><div id="cb-progress"></div></div>
+			</div>
+
+			<div id="game-box" class="game-box-cb">
+				<div id="wb-action"></div>
+				<div id="cb-divider"></div>
+				<div id="cb-balls"></div>
+			</div>
+			
+			<div id="lobe-type-header"><img src="images/bg_header_parietallobe.png" /></div>
+			<div id="lobe-type-content">
+				<a href="index.html#parietal"><img src="images/bg_type_parietal.png" id="lobe-type-image" /></a>
+				<a href="word-builder.html"><img src="images/bg_nextgame.png" id="lobe-type-next" /></a>
+			</div>
+			
+			<div id="previous-score-header"><img src="images/bg_header_previoushighscore.png" /></div>
+			<div id="previous-score-text">
+				<span id="previous-score-score">0</span><br>
+				<span id="previous-score-text-bold">You&#8217;re a Brain Games Brainy Beginner</span><br><span id="previous-score-text-regular">Congratulations, you&#8217;re on your way to mastering Brain Games. You have what it takes to be a top player. Just put your mind to it and practice until you&#8217;re a pro…you&#8217;ve got this!</span>
+			</div>
+			
+			<div id="stats-header"><img src="images/bg_header_stats.png" /></div>
+			<div id="stats-score">
+				<span id="stats-gray">YOU&nbsp;&nbsp;&nbsp;</span>0 PTS<br>
+				<span id="stats-gray">AVG&nbsp;&nbsp;&nbsp;</span>0 PTS
+			</div>
+			
+			<div id="friends-playing-header"><img src="images/bg_header_friendsplaying.png" /></div>
+			<div id="friends-playing-text">
+				<table>
+					<tr>
+						<td><div class="friends-playing-icon"><img src="images/ps.png" class="friends-pic" /></div></td>
+						<td><div class="friends-playing-name">John Smith<br>0 PTS</div></td>
+					</tr>
+					<tr>
+						<td><div class="friends-playing-icon"><img src="images/ps.png" class="friends-pic" /></div></td>
+						<td><div class="friends-playing-name">John Smith<br>0 PTS</div></td>
+					</tr>		
+				</table>
+				<a href="#" onclick="friendsPlaying();return false;" id="friends-playing-view">View All &#187;</a><br>
+				<a href="#" onclick="inviteFriends();return false;" id="friends-playing-invite"><span>Invite Friends</span></a>
+			</div>
+
+			<img src="images/bg_cornerA.png" id="corner-top-left" />
+			<img src="images/bg_cornerC.png" id="corner-top-right" />
+			<img src="images/bg_cornerD.png" id="corner-bottom-right" />
+			<img src="images/bg_cornerB.png" id="corner-bottom-left" />
+		</div>
+	</body>
+</html>

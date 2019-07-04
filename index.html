@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Brain Games</title>
+		<link rel="stylesheet" href="css/brain.css">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/easing-min.js"></script>
+		<script src="js/brain.js"></script>
+	</head>
+	<body class="index-container">
+		<div id="container" class="index-container">
+			<a href="index.html"><img src="images/bg_header.png" id="header" /></a>
+			<a href="http://braingames.nationalgeographic.com/" target="_blank"><img src="images/bg_logo_ngc.png" id="logo-ngc" /></a>
+			
+			<div id="container-mask">
+				
+				<div id="container-main" class="containers">
+					<div id="sub-header"><img src="images/bg_subheader.png" /></div>
+					
+					<div id="brain-container">
+						<hr id="frontal-lobe-line" />
+						<hr id="parietal-lobe-line" />
+						<hr id="temporal-lobe-line" />
+						<hr id="occipital-lobe-line" />
+						<div id="brain">
+							<img src="images/bg_brain.png" class="brain-image" border="0" width="333" height="240" alt="" />
+							<div id="brain-highlight" class="brain-image"></div>
+							<map name="brain-map">
+								<area shape="poly" coords="182,0,183,52,157,95,155,138,107,161,88,195,10,179,10,84,94,12," href="#" alt="Frontal Lobe" title="Frontal Lobe" onclick="frontal();return false;" id="map-frontal" />
+								<area shape="poly" coords="183,2,184,51,158,97,167,136,283,112,296,48," href="#" alt="Parietal Lobe" title="Parietal Lobe" onclick="parietal();return false;" id="map-parietal" />
+								<area shape="poly" coords="301,54,282,111,286,181,332,171,331,92," href="#" alt="Occipital Lobe" title="Occipital Lobe" onclick="occipital();return false;" id="map-occipital" />
+								<area shape="poly" coords="88,196,116,149,282,111,284,195,205,238,138,239," href="#" alt="Temporal Lobe" title="Temporal Lobe" onclick="temporal();return false;" id="map-temporal" />
+							</map>
+							<img src="images/bg_brain_map.png" usemap="#brain-map" border="0" width="333" height="240" alt="" class="brain-image" id="brain-map-image" />
+						</div>
+						
+						<div id="frontal-lobe" class="lobe"><img src="images/bg_lobebox_frontal.png" /></div>
+						<div id="parietal-lobe" class="lobe"><img src="images/bg_lobebox_parietal.png" /></div>
+						<div id="temporal-lobe" class="lobe"><img src="images/bg_lobebox_temporal.png" /></div>
+						<div id="occipital-lobe" class="lobe"><img src="images/bg_lobebox_occipital.png" /></div>
+					</div>
+					
+					<a id="start-playing" href="games-overview.html"><span>Start Playing</span></a>
+					
+					<img src="images/bg_weeklyprize.png" id="weeklyprize" />
+					
+					<a href="http://www.charter.net/vod" target="_blank"><img src="images/bg_tunein.png" id="tune-in" /></a>
+					
+					
+				</div>
+				<div id="container-frontal" class="containers">
+					<div class="header-text"><img class="header-image" src="images/bg_header_frontal.png" />&nbsp;&nbsp;&nbsp;<a href="#" onclick="return false;"><img src="images/bg_share.png" /></a>&nbsp;<a href="" onclick="return false;" target="_blank"><img src="images/bg_tweet.png" /></a></div>
+
+					<div id="header-divider" class="divider"></div>
+					<a href="#" onclick="occipitalBack();return false;" class="back-lobe"><span>Back</span></a><a href="#" onclick="parietal();return false;" class="next-lobe"><span>Next Lobe</span></a>
+					
+					<img src="images/bg_lobe_frontal.png" class="main-lobe" />
+					<div class="lobe-text-1">Not surprisingly, the frontal lobe is located at the front part of the brain.</div>
+					<div class="lobe-text-2">It's the largest of the lobes and home to our cognitive thinking, which includes planning, problem solving and decision making. This lobe also determines and shapes our personalities, so you can thank your frontal lobe for helping to make you awesome.</div>
+					<div class="lobe-text-3">
+						<table border="0">
+							<tr>
+								<td>MOTOR SKILLS</td>
+								<td>REASONING</td>
+							</tr>
+							<tr>
+								<td>HIGHER ORDER FUNCTIONS</td>
+								<td>JUDGMENT &amp; IMPULSE CONTROL</td>
+							</tr>
+							<tr>
+								<td>MEMORY</td>
+								<td>LANGUAGE COMPREHENSION</td>
+							</tr>
+						</table>
+					</div>
+					
+					<a href="games-overview.html" class="see-all-games"><span>See All Games</span></a>
+					<a href="memory-squares.html"id="play-game-frontal"><span>Play Memory Squares</span></a>
+					
+					<a href="http://www.charter.net/vod" target="_blank"><img src="images/bg_tunein_lobe.png" id="tune-in-lobe" /></a>
+				</div>
+				<div id="container-parietal" class="containers">
+					<div class="header-text"><img class="header-image" src="images/bg_header_parietal.png" />&nbsp;&nbsp;&nbsp;<a href="#" onclick="return false;"><img src="images/bg_share.png" /></a>&nbsp;<a href="" onclick="return false;" target="_blank"><img src="images/bg_tweet.png" /></a></div>
+					<div id="header-divider" class="divider"></div>
+					<a href="#" onclick="frontalBack();return false;" class="back-lobe"><span>Back</span></a><a href="#" onclick="temporal();return false;" class="next-lobe"><span>Next Lobe</span></a>
+					
+					<img src="images/bg_lobe_parietal.png" class="main-lobe" />
+					<div class="lobe-text-1">The parietal lobe sits between the front and back lobes and stretches to both sides of the brain.</div>
+					<div class="lobe-text-2">It’s associated with processing tactile sensory information, which includes sensations such as pain, pressure, temperature and touch. The right side helps interpret spatial information while the left side is involved in perceiving numbers, understanding objects, and writing.</div>
+					<div class="lobe-text-3">
+						<table border="0">
+							<tr>
+								<td>COGNITION</td>
+								<td>SPATIAL ORIENTATION</td>
+							</tr>
+							<tr>
+								<td>INFORMATION PROCESSING</td>
+								<td>SPEECH</td>
+							</tr>
+							<tr>
+								<td>PAIN &amp; TOUCH SENSATION</td>
+								<td>VISUAL PERCEPTION</td>
+							</tr>
+						</table>
+					</div>
+					
+					<a href="games-overview.html" class="see-all-games"><span>See All Games</span></a>
+					<a href="disc-shooter.html" id="play-game-parietal"><span>Play Disc Shooter</span></a>
+					
+					<a href="http://www.charter.net/vod" target="_blank"><img src="images/bg_tunein_lobe.png" id="tune-in-lobe" /></a>
+				</div>
+				<div id="container-temporal" class="containers">
+					<div class="header-text"><img class="header-image" src="images/bg_header_temporal.png" />&nbsp;&nbsp;&nbsp;<a href="#" onclick="return false;" /></a>&nbsp;<a href="#" onclick="return false;" target="_blank"><img src="images/bg_tweet.png" /></a></div>
+					<div id="header-divider" class="divider"></div>
+					<a href="#" onclick="parietalBack();return false;" class="back-lobe"><span>Back</span></a><a href="#" onclick="occipital();return false;" class="next-lobe"><span>Next Lobe</span></a>
+					
+					<img src="images/bg_lobe_temporal.png" class="main-lobe" />
+					<div class="lobe-text-1">The temporal lobe is located on the base of the brain, right behind the temples.</div>
+					<div class="lobe-text-2">This lobe is home to the  primary auditory cortex, which is known for interpreting sounds such as language. The hippocampus can be found here. Besides being a really fun word to say, the hippocampus is where memory is formed, organized and stored.</div>
+					<div class="lobe-text-3">
+						<table border="0">
+							<tr>
+								<td>AUDITORY PERCEPTION</td>
+								<td>EMOTIONAL RESPONSES</td>
+							</tr>
+							<tr>
+								<td>VISUAL PERCEPTION</td>
+								<td>SPEECH</td>
+							</tr>
+							<tr>
+								<td>NEW MEMORIES</td>
+								<td>MEANING OF OBJECTS</td>
+							</tr>
+						</table>
+					</div>
+					
+					<a href="games-overview.html" class="see-all-games"><span>See All Games</span></a>
+					<a href="word-builder.html" id="play-game-temporal"><span>Play Word Builder</span></a>
+					
+					<a href="http://www.charter.net/vod" target="_blank"><img src="images/bg_tunein_lobe.png" id="tune-in-lobe" /></a>
+				</div>
+				<div id="container-occipital" class="containers">
+					<div class="header-text"><img class="header-image" src="images/bg_header_occipital.png" />&nbsp;&nbsp;&nbsp;<a href="#" onclick="return false;"><img src="images/bg_share.png" /></a>&nbsp;<a href="#" onclick="return false;" target="_blank"><img src="images/bg_tweet.png" /></a></div>
+					<div id="header-divider" class="divider"></div>
+					<a href="#" onclick="temporalBack();return false;" class="back-lobe"><span>Back</span></a><a href="#" onclick="frontal();return false;" class="next-lobe"><span>Next Lobe</span></a>
+					
+					<img src="images/bg_lobe_occipital.png" class="main-lobe" />
+					<div class="lobe-text-1">The occipital lobe is positioned at the back of the brain.</div>
+					<div class="lobe-text-2">While it may be in the back of your brain,  it is actually associated with your vision  and interpreting visual stimuli and information, such as color. It is home to the primary visual cortex, which receives and interprets information from the retinas of the eyes, giving new meaning to the saying, "I have eyes in the back of my head."</div>
+					<div class="lobe-text-3">
+						<table border="0">
+							<tr>
+								<td>VISUAL PERCEPTION</td>
+								<td>SHAPE DIFFERENTIATION</td>
+							</tr>
+							<tr>
+								<td>COLOR RECOGNITION</td>
+								<td>UNDERSTANDING LETTERS</td>
+							</tr>
+						</table>
+					</div>
+					
+					<a href="games-overview.html" class="see-all-games"><span>See All Games</span></a>
+					<a href="optical-illusions.html" id="play-game-occipital"><span>Play Optical Illusions</span></a>
+					
+					<a href="http://www.charter.net/vod" target="_blank"><img src="images/bg_tunein_lobe.png" id="tune-in-lobe" /></a>
+				</div>
+				
+			</div>
+			
+			<img src="images/bg_cornerA.png" id="corner-top-left" />
+			<img src="images/bg_cornerC.png" id="corner-top-right" />
+			<img src="images/bg_cornerD.png" id="corner-bottom-right" />
+			<img src="images/bg_cornerB.png" id="corner-bottom-left" />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Brain Games | Friends Playing</title>
+	<meta name="viewport" content="width=810">
+	<link rel="stylesheet" href="css/brain.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="overlay-page-container">
+		<a href="#" onclick="$('#overlay-page', window.parent.document).hide();" id="friends-close"><span>Close</span></a>
+		
+		<div id="friends-header">Look Who's Playing!</div>
+		<div class="divider-long" id="friends-header-divider"></div>
+		<div id="friends-sub-header">Look at who is playing or has recently played Brain Games and discover, once and for all, if you are actually the smartest person you know. <span class="yellow">Compare scores</span> and <span class="yellow"><a href="#" onclick="$('#overlay-page', window.parent.document).hide();window.parent.inviteFriends();return false;">invite your friends</a></span> a Battle of the Brains.</div>
+
+		<table border="0" id="friends-table">
+			<td><div class="friends-cell"><div class="friend-picture"><img src="images/ps.png" class="friends-pic" /></div><div class="friend-text">John Smith<br><span class="friend-sub-text">0 PTS</span></div></div></td>
+			<td><div class="friends-cell"><div class="friend-picture"><img src="images/ps.png" class="friends-pic" /></div><div class="friend-text">John Smith<br><span class="friend-sub-text">0 PTS</span></div></div></td>
+			<td><div class="friends-cell"><div class="friend-picture"><img src="images/ps.png" class="friends-pic" /></div><div class="friend-text">John Smith<br><span class="friend-sub-text">0 PTS</span></div></div></td>
+		</table>
+		
+		<div class="divider-long" id="friends-footer-divider"></div>
+		<a href="#" onclick="return false;"><img src="images/bg_previous.png" id="friends-previous" /></a>
+		<div id="friends-page">3 OF 3 FRIENDS</div>
+		<a href="#" onclick="return false;"><img src="images/bg_next.png" id="friends-next" /></a>
+	</div>
+</body>
+</html>

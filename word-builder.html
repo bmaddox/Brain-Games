@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Brain Games | Word Builder</title>
+		<meta name="viewport" content="width=810">
+		<link rel="stylesheet" href="css/brain.css">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/ptrie.js"></script>
+		<script src="js/jquery.preload.min.js"></script>
+		<script src="js/word-builder.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<a href="index.html"><img src="images/bg_header.png" id="header" /></a>
+			<a href="http://braingames.nationalgeographic.com/" target="_blank"><img src="images/bg_logo_ngc.png" id="logo-ngc" /></a>
+
+			<div id="game-lobe"><img src="images/bg_header_wordbuilder.png" /></div>
+
+			<div id="game-stats">
+				<div id="wb-score"></div>
+				<div id="wb-time"></div>
+			</div>
+
+			<div id="game-box" class="game-box-ms">
+				<div id="wb-prev-word"></div>
+				<div id="wb-action"></div>
+				<div id="wb-word"></div>
+				
+				<div id="wb-keys" class="hide">
+					<div class="wb-key"><div class="wb-letter wb-q1" id="q"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-w1" id="w"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-e1" id="e"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-r1" id="r"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-t1" id="t"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-y1" id="y"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-u1" id="u"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-i1" id="i"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-o1" id="o"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-p1" id="p"></div></div>
+					<br>
+					<div class="wb-key"><div class="wb-letter wb-a1" id="a"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-s1" id="s"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-d1" id="d"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-f1" id="f"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-g1" id="g"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-h1" id="h"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-j1" id="j"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-k1" id="k"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-l1" id="l"></div></div>
+					<br>
+					<div class="wb-key wb-spacer"><div class="wb-letter wb-z1" id="z"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-x1" id="x"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-c1" id="c"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-v1" id="v"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-b1" id="b"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-n1" id="n"></div></div>
+					<div class="wb-key"><div class="wb-letter wb-m1" id="m"></div></div>
+					<div class="wb-delete"></div>
+				</div>
+			</div>
+
+			<div id="lobe-type-header"><img src="images/bg_header_temporallobe.png" /></div>
+			<div id="lobe-type-content">
+				<a href="index.html"><img src="images/bg_type_temporal.png" id="lobe-type-image" /></a>
+				<a href="optical-illusions.html"><img src="images/bg_nextgame.png" id="lobe-type-next" /></a>
+			</div>
+			
+			<div id="previous-score-header"><img src="images/bg_header_previoushighscore.png" /></div>
+			<div id="previous-score-text">
+				<span id="previous-score-score">0</span><br>
+				<span id="previous-score-text-bold">You&#8217;re a Brain Games Brainy Beginner</span><br><span id="previous-score-text-regular">Congratulations, you&#8217;re on your way to mastering Brain Games. You have what it takes to be a top player. Just put your mind to it and practice until you&#8217;re a pro…you&#8217;ve got this!</span>
+			</div>
+			
+			<div id="stats-header"><img src="images/bg_header_stats.png" /></div>
+			<div id="stats-score">
+				<span id="stats-gray">YOU&nbsp;&nbsp;&nbsp;</span>0 PTS<br>
+				<span id="stats-gray">AVG&nbsp;&nbsp;&nbsp;</span>0 PTS
+			</div>
+			
+			<div id="friends-playing-header"><img src="images/bg_header_friendsplaying.png" /></div>
+			<div id="friends-playing-text">
+				<table>
+					<tr>
+						<td><div class="friends-playing-icon"><img src="images/ps.png" class="friends-pic" /></div></td>
+						<td><div class="friends-playing-name">John Smith<br>0 PTS</div></td>
+					</tr>
+					<tr>
+						<td><div class="friends-playing-icon"><img src="images/ps.png" class="friends-pic" /></div></td>
+						<td><div class="friends-playing-name">John Smith<br>0 PTS</div></td>
+					</tr>		
+				</table>
+				<a href="#" onclick="friendsPlaying();return false;" id="friends-playing-view">View All &#187;</a><br>
+				<a href="#" onclick="inviteFriends();return false;" id="friends-playing-invite"><span>Invite Friends</span></a>
+			</div>
+
+
+			<img src="images/bg_cornerA.png" id="corner-top-left" />
+			<img src="images/bg_cornerC.png" id="corner-top-right" />
+			<img src="images/bg_cornerD.png" id="corner-bottom-right" />
+			<img src="images/bg_cornerB.png" id="corner-bottom-left" />
+		</div>
+	</body>
+</html>

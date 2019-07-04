@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Brain Games | Invite Friends</title>
+	<link rel="stylesheet" href="css/brain.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script>var score = 0;var allFriends = [{"uid":"0","pic":"images/ps.png","name":"John Smith"},{"uid":"0","pic":"images/ps.png","name":"John Smith"},{"uid":"0","pic":"images/ps.png","name":"John Smith"}];</script>
+	<script src="js/invite-friends.js"></script>
+</head>
+<body>
+	<div id="overlay-page-container">
+		<a href="#" onclick="$('#overlay-page', window.parent.document).hide();" id="friends-close"><span>Close</span></a>
+
+		<div id="invite-friends-header">Invite Your Friends</div>
+		<div class="divider-long" id="invite-friends-header-divider"></div>
+		<div id="invite-friends-sub-header">
+			<div id="invite-all" class="invite-bar-text invite-bar-box">ALL</div><div id="invite-selected" class="invite-bar-text">SELECTED (<span id="invite-selected-num">0</span>)</div>
+			<form id="invite-bar-form"><input type="text" id="invite-bar-search" placeholder="Start typing a name"></form>
+		</div>
+		<div class="divider-long" id="invite-friends-sub-header-divider"></div>
+		
+		<table border="0" id="invite-friends-table">
+						
+		</table>
+		
+		
+		<div class="divider-long" id="invite-friends-footer-divider"></div>
+		<a href="#"><img src="images/bg_previous.png" onclick="prev();return false;" id="friends-previous" /></a>
+		<div id="friends-page"></div> 
+		<a href="#"><img src="images/bg_next.png" onclick="next();return false;" id="friends-next"></a>
+		
+		<a href="#" id="friends-invite"><span>Invite Friends</span></a>
+	</div>
+</body>
+</html>
