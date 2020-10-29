@@ -2,4 +2,4 @@
 
 > A facebook app created for the television show Brain Games. This version is flattened, removing all php and facebook api.
 
-https://brennnn.github.io/Brain-Games/
+https://bmaddox.github.io/Brain-Games/
